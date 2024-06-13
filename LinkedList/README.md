@@ -2,4 +2,4 @@
 
 
 - Create a LinkedList
-    - [Python](/LinkedList/linkedlist.py)
+    - [Python](https://github.com/skdehuri/dsa/blob/master/LinkedList/linkedlist.py)
