@@ -15,3 +15,12 @@
         - insert_based_on_index
         - insert_after_value
     - [Python code](https://github.com/skdehuri/dsa/blob/master/LinkedList/02.py)
+
+3. Remove LinkedList Node
+    - Description - Remove linkedlist node from the beginning, end, middle, from any position based on index or after a node value.
+    - Functionalities
+        - remove_from_beginning
+        - remove_from_end
+        - remove_from_middle
+        - remove_based_on_index
+    - [Python code](https://github.com/skdehuri/dsa/blob/master/LinkedList/03.py)
