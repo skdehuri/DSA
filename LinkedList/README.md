@@ -24,3 +24,10 @@
         - remove_from_middle
         - remove_based_on_index
     - [Python code](https://github.com/skdehuri/dsa/blob/master/LinkedList/03.py)
+
+4. Implement Stack using LinkedList
+    - Description - Push and Pop operations using linkedlist data structure
+    - Functionalities
+        - push
+        - pop
+    - [Python code](https://github.com/skdehuri/dsa/blob/master/LinkedList/04.py)
