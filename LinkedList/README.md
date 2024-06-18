@@ -37,3 +37,10 @@
     - Functionalities
         -reverse
     - [Python code](https://github.com/skdehuri/dsa/blob/master/LinkedList/05.py)
+
+6. Detect loop in LinkedList and remove it
+    - Description - Detect loop in the linkedlist using hasing and Floyd's cycle algorithm and remove the loop
+    - Functionalities
+        - detect_and_remove_loop_using_hash
+        - detect_and_remove_loop_using_floyd_algo
+    - [Python code](https://github.com/skdehuri/dsa/blob/master/LinkedList/06.py)
