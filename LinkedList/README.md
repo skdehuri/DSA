@@ -31,3 +31,9 @@
         - push
         - pop
     - [Python code](https://github.com/skdehuri/dsa/blob/master/LinkedList/04.py)
+
+5. Reverse a LinkedList
+    - Description - Reverse all the nodes
+    - Functionalities
+        -reverse
+    - [Python code](https://github.com/skdehuri/dsa/blob/master/LinkedList/05.py)
