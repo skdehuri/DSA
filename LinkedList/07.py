@@ -101,11 +101,11 @@ ll = LinkedList()
 ll.add_values([1, 2, 3, 4, 5, 6, 7, 8])
 ll.print()
 
-# ll.rotate_right()
-# ll.print()
+ll.rotate_right()
+ll.print()
 
-# ll.rotate_right(3)
-# ll.print()
+ll.rotate_right(3)
+ll.print()
 
 ll.rotate_left()
 ll.rotate_left(3)
