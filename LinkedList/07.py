@@ -70,21 +70,31 @@ class LinkedList:
         self.head = current_node.next
         current_node.next = None
 
-    def rotate_left(self):
+    def rotate_left(self, k=1):
 
         if not self.head:
             print("Linkedlist is empty")
             return
         
         tail_node = self.head
+        ll_length = 1
 
         while tail_node.next:
+            ll_length += 1
             tail_node = tail_node.next
         
-        temp_node = self.head
-        self.head = self.head.next
-        tail_node.next = temp_node
-        temp_node.next = None
+        k = k % ll_length
+        current_node = self.head
+        count = 1
+
+        while count != k:
+            count += 1
+            current_node = current_node.next
+
+        temp_node = current_node.next
+        current_node.next = None
+        tail_node.next = self.head
+        self.head = temp_node
 
 
 ll = LinkedList()
@@ -98,5 +108,5 @@ ll.print()
 # ll.print()
 
 ll.rotate_left()
-ll.rotate_left()
+ll.rotate_left(3)
 ll.print()
