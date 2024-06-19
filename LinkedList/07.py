@@ -42,22 +42,33 @@ class LinkedList:
         
         print(ll_str)
 
-    def rotate_right(self):
+    def rotate_right(self, k=1):
         
         if not self.head:
             print("Linkedlist is empty")
             return
         
+        tail_node = self.head
+        ll_length = 1
+
+        while tail_node.next:
+            ll_length += 1
+            tail_node = tail_node.next
+
+        # remove extra rotations
+        k = k % ll_length
+
+        count = 0
         current_node = self.head
-        prev_node = None
 
-        while current_node.next:
-            prev_node = current_node
+        # loop till we get the node where we need to modify the linkedlist structure
+        while count != (ll_length - k - 1):
+            count += 1
             current_node = current_node.next
-
-        prev_node.next = None
-        current_node.next = self.head
-        self.head = current_node
+        
+        tail_node.next = self.head
+        self.head = current_node.next
+        current_node.next = None
 
 
 ll = LinkedList()
@@ -65,4 +76,7 @@ ll.add_values([1, 2, 3, 4, 5, 6, 7, 8])
 ll.print()
 
 ll.rotate_right()
+ll.print()
+
+ll.rotate_right(3)
 ll.print()
