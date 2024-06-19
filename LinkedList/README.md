@@ -49,5 +49,5 @@
     - Description - Rotate the linkedlist clockwise or counter-clockwise by k nodes
     - Funcationalities
         - rotate_right
-        - rotate-left
+        - rotate_left
     - [Python code](https://github.com/skdehuri/dsa/blob/master/LinkedList/07.py)

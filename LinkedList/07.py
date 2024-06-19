@@ -70,13 +70,33 @@ class LinkedList:
         self.head = current_node.next
         current_node.next = None
 
+    def rotate_left(self):
+
+        if not self.head:
+            print("Linkedlist is empty")
+            return
+        
+        tail_node = self.head
+
+        while tail_node.next:
+            tail_node = tail_node.next
+        
+        temp_node = self.head
+        self.head = self.head.next
+        tail_node.next = temp_node
+        temp_node.next = None
+
 
 ll = LinkedList()
 ll.add_values([1, 2, 3, 4, 5, 6, 7, 8])
 ll.print()
 
-ll.rotate_right()
-ll.print()
+# ll.rotate_right()
+# ll.print()
 
-ll.rotate_right(3)
+# ll.rotate_right(3)
+# ll.print()
+
+ll.rotate_left()
+ll.rotate_left()
 ll.print()
