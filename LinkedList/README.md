@@ -44,3 +44,10 @@
         - detect_and_remove_loop_using_hash
         - detect_and_remove_loop_using_floyd_algo
     - [Python code](https://github.com/skdehuri/dsa/blob/master/LinkedList/06.py)
+
+7. Rotate a LinkedList
+    - Description - Rotate the linkedlist clockwise or counter-clockwise by k nodes
+    - Funcationalities
+        - rotate_right
+        - rotate-left
+    - [Python code](https://github.com/skdehuri/dsa/blob/master/LinkedList/07.py)
