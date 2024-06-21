@@ -2,7 +2,6 @@
 
 
 1. General Tree [Python code](https://github.com/skdehuri/dsa/blob/master/Tree/01.py)
-
     <details>
     <summary>Details</summary>
 
@@ -11,7 +10,6 @@
     </details> 
 
 1. Binary Tree Traversal [Python code](https://github.com/skdehuri/dsa/blob/master/Tree/02.py)
-
     <details>
     <summary>Details</summary>
 

@@ -25,6 +25,7 @@
 3. Remove LinkedList Node [Python code](https://github.com/skdehuri/dsa/blob/master/LinkedList/03.py)
     <details>
     <summary>Details</summary>
+
     - Description - Remove linkedlist node from the beginning, end, middle, from any position based on index or after a node value.
     - Functionalities
         - remove_from_beginning
@@ -36,6 +37,7 @@
 4. Implement Stack using LinkedList [Python code](https://github.com/skdehuri/dsa/blob/master/LinkedList/04.py)
     <details>
     <summary>Details</summary>
+
     - Description - Push and Pop operations using linkedlist data structure
     - Functionalities
         - push
@@ -45,6 +47,7 @@
 5. Reverse a LinkedList [Python code](https://github.com/skdehuri/dsa/blob/master/LinkedList/05.py)
     <details>
     <summary>Details</summary>
+    
     - Description - Reverse all the nodes
     - Functionalities
         -reverse
@@ -53,6 +56,7 @@
 6. Detect loop in LinkedList and remove it [Python code](https://github.com/skdehuri/dsa/blob/master/LinkedList/06.py)
     <details>
     <summary>Details</summary>
+
     - Description - Detect loop in the linkedlist using hasing and Floyd's cycle algorithm and remove the loop
     - Functionalities
         - detect_and_remove_loop_using_hash
@@ -62,6 +66,7 @@
 7. Rotate a LinkedList [Python code](https://github.com/skdehuri/dsa/blob/master/LinkedList/07.py)
     <details>
     <summary>Details</summary>
+    
     - Description - Rotate the linkedlist clockwise or counter-clockwise by k nodes
     - Funcationalities
         - rotate_right
