@@ -18,8 +18,20 @@ class Node:
     def in_order_traversal(self, node):
         if node:
             self.in_order_traversal(node.left)
-            print(node.data)
+            print(node.data, end=" ")
             self.in_order_traversal(node.right)
+
+    def pre_order_traversal(self, node):
+        if node:
+            print(node.data, end=" ")
+            self.pre_order_traversal(node.left)
+            self.pre_order_traversal(node.right)
+    
+    def post_order_traversal(self, node):
+        if node:
+            self.post_order_traversal(node.left)
+            self.post_order_traversal(node.right)
+            print(node.data, end=" ")
 
 
 root = Node(10)
@@ -42,4 +54,15 @@ node_30.right = Node(60)
 
 
 print(root)
+
+print("\n")
+print("In-order traversal - ", end=" ")
 root.in_order_traversal(root)
+
+print("\n")
+print("Pre-order traversal - ", end=" ")
+root.pre_order_traversal(root)
+
+print("\n")
+print("Post-order traversal - ", end=" ")
+root.post_order_traversal(root)
