@@ -43,7 +43,23 @@ def level_order_traversal_naive(node):
 ################## USING QUEUE ####################
 
 def level_order_traversal_queue(node):
-    pass
+    
+    if not node:
+        return
+    
+    queue = []
+
+    queue.append(node)
+
+    while len(queue) > 0:
+        print(queue[0].data, end=" ")
+        node = queue.pop(0)
+
+        if node.left:
+            queue.append(node.left)
+
+        if node.right:
+            queue.append(node.right)
 
 
 root_node = Node(10)
@@ -56,3 +72,5 @@ root_node.right.right = Node(80)
 root_node.right.right.right = Node(50)
 
 level_order_traversal_naive(root_node)
+print("\n")
+level_order_traversal_queue(root_node)
