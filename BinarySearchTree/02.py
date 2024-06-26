@@ -32,6 +32,18 @@ def search(node, value):
 
     elif value > node.data:
         return search(node.right, value)
+    
+
+def iterative_search(node, value):
+    while node:
+        if node.data == value:
+            return True
+        elif node.data > value:
+            node = node.left
+        else:
+            node = node.right
+        
+    return False
         
 
 root_node = Node(25)
@@ -47,6 +59,7 @@ root_node.add_data(5)
 root_node.add_data(70)
 
 print(search(root_node, 9))
+print(iterative_search(root_node, 9))
 
 
 
